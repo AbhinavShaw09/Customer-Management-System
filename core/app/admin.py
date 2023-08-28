@@ -1,14 +1,14 @@
 from django.contrib import admin
 
 from .models import(
-    CustomersModel,
-    OrdersModel,
-    Products,
+    CustomerModel,
+    OrderModel,
+    Product,
     ProductModel
 
 )
 
-admin.site.register(CustomersModel)
-admin.site.register(OrdersModel)
-admin.site.register(Products)
+admin.site.register(CustomerModel)
+admin.site.register(OrderModel)
+admin.site.register(Product)
 admin.site.register(ProductModel)

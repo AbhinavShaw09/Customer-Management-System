@@ -28,7 +28,7 @@ class OrderModel(models.Model):
         verbose_name = 'Orders'
 
     def __str__(self):
-        return self.invoice_creation_da
+        return str(self.order_id)
     
 
 class Product(models.Model):

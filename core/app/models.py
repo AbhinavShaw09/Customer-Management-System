@@ -6,7 +6,7 @@ class CustomerModel(models.Model):
     last_name = models.CharField(max_length=100,blank=False,null=False)
     email = models.EmailField(blank=False,null=False)
     company = models.CharField(max_length=100,blank=True,null=True)
-    address = models.TextField(blank=False,null=False)
+    address = models.TextField(blank=True,null=True)
 
     class Meta:
         db_table = 'Customer'
@@ -48,9 +48,9 @@ class Product(models.Model):
 
 class ProductModel(models.Model):
     order_product_id = models.IntegerField(primary_key=True,blank=False,null=False)
-    order_id = models.ForeignKey(OrderModel,on_delete=models.CASCADE,blank=False,null=False,related_name='orderId')
-    product_id = models.ForeignKey(Product,on_delete=models.CASCADE,blank=False,null=False,related_name='productId')
-    quantity = models.IntegerField(blank=False,null=False)
+    order_model_pm= models.ForeignKey(OrderModel,on_delete=models.CASCADE,related_name='orderId')
+    product_pm = models.ForeignKey(Product,on_delete=models.CASCADE,related_name='productId')
+    quantity = models.IntegerField()
     
     class Meta:
         db_table = 'ProductModel'

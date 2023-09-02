@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from app.models import(
-    CustomersModel,
+    CustomerModel,
     OrderModel,
     Product,
     ProductModel
@@ -8,21 +8,21 @@ from app.models import(
 
 class CustomerSerializer(serializers.ModelSerializer):
     class Meta:
-        model = CustomersModel
+        model = CustomerModel
         fields = '__all__'
 
-class OrderModel(serializers.ModelSerializer):
+class OrderModelSerializer(serializers.ModelSerializer):
     class Meta:
-        model = OrdersModel
-        field = '__all__'
+        model = OrderModel
+        fields = '__all__'
         
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        field = '__all__'
+        fields = '__all__'
 
 class ProductModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProductModel
-        field = '__all__'
+        fields = '__all__'
 

@@ -13,7 +13,6 @@ from .serializers import(
     ProductModelSerializer
 )
 
-
 class CustomerViewSet(ModelViewSet):
     queryset = CustomerModel.objects.all()
     serializer_class =   CustomerSerializer

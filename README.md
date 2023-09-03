@@ -1,6 +1,6 @@
 
 # Customer-Management-System
 
-A Customer management system built using djnago, DRF and Bootstrap
+A Customer management system built using djnago, DRF and React js 
 
 

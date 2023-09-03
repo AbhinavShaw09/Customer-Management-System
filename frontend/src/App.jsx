@@ -1,12 +1,12 @@
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-
+import Home from '../src/components/Home/Home'
+import Add from './components/Add/Add'
 
 function App() {
   return (
-  <h1>Hello world </h1>
+    <>
+      {/* <Home/> */}
+      <Add/>
+    </>
   )
 }
 
